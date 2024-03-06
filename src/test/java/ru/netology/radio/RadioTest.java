@@ -4,6 +4,22 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
+    // тесты по работе конструкторов
+
+    @Test
+    public void testConstructor() {
+        Radio radio = new Radio(20);
+
+        Assertions.assertEquals(20, radio.getNumberOfRadio());
+    }
+
+    @Test
+    public void testConstructor2() {
+        Radio radio = new Radio();
+
+        Assertions.assertEquals(10,radio.getNumberOfRadio());
+    }
+
     // тесты по работе радиостанции
 
     @Test
